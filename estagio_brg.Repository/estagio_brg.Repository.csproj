@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\estagio_brg.Contracts\estagio_brg.Contracts.csproj" />
+    <ProjectReference Include="..\estagio_brg.Entities\estagio_brg.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

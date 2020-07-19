@@ -1,0 +1,9 @@
+C:\Users\vtspe\source\repos\estagio_brg\estagio_brg.Entities\obj\Debug\netcoreapp3.1\estagio_brg.Entities.csprojAssemblyReference.cache
+C:\Users\vtspe\source\repos\estagio_brg\estagio_brg.Entities\obj\Debug\netcoreapp3.1\estagio_brg.Entities.AssemblyInfoInputs.cache
+C:\Users\vtspe\source\repos\estagio_brg\estagio_brg.Entities\obj\Debug\netcoreapp3.1\estagio_brg.Entities.AssemblyInfo.cs
+C:\Users\vtspe\source\repos\estagio_brg\estagio_brg.Entities\obj\Debug\netcoreapp3.1\estagio_brg.Entities.csproj.CoreCompileInputs.cache
+C:\Users\vtspe\source\repos\estagio_brg\estagio_brg.Entities\bin\Debug\netcoreapp3.1\estagio_brg.Entities.deps.json
+C:\Users\vtspe\source\repos\estagio_brg\estagio_brg.Entities\bin\Debug\netcoreapp3.1\estagio_brg.Entities.dll
+C:\Users\vtspe\source\repos\estagio_brg\estagio_brg.Entities\bin\Debug\netcoreapp3.1\estagio_brg.Entities.pdb
+C:\Users\vtspe\source\repos\estagio_brg\estagio_brg.Entities\obj\Debug\netcoreapp3.1\estagio_brg.Entities.dll
+C:\Users\vtspe\source\repos\estagio_brg\estagio_brg.Entities\obj\Debug\netcoreapp3.1\estagio_brg.Entities.pdb

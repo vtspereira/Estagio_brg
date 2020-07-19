@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>estagio_brg</name>
+    </assembly>
+    <members>
+        <member name="M:estagio_brg.Controllers.ColaboradorController.Get">
+            <summary>
+            Retornar lista de colaboradores
+            </summary>
+        </member>
+        <member name="M:estagio_brg.Controllers.ColaboradorController.Get(System.Guid)">
+            <summary>
+            Retornar colaborador filtrado
+            </summary>
+            <param name="guid">Id do colaborador</param>
+        </member>
+        <member name="M:estagio_brg.Controllers.ColaboradorController.Create(estagio_brg.Entities.Models.Colaborador)">
+             <summary>
+             Adicionar colaborador
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST api/Colaborador/Create
+                 {
+                    "Cargo": "Analista de treinamento e capacitação",
+                    "Departamento": "RH",
+                 }
+            
+             </remarks>
+             <param name="entity">Objeto colaborador</param>
+             <response code="201">Returns the newly created item</response>
+             <response code="400">If the item is null</response>  
+        </member>
+        <member name="M:estagio_brg.Controllers.ColaboradorController.Update(estagio_brg.Entities.Models.Colaborador)">
+             <summary>
+             Atualizar colaborador
+             </summary>
+              <remarks>
+             Sample request:
+            
+                 POST api/Colaborador/Update/
+                 {
+                    "IdColaborador": "16eb3b70-2512-45df-8081-25474341460e",
+                    "Cargo": "Gestor de recrutamento e seleção",
+                    "Departamento": "RH",
+                     }
+                 }
+            
+             </remarks>
+             <param name="entity">Objeto colaborador contendo as mudanças</param>
+        </member>
+        <member name="M:estagio_brg.Controllers.ColaboradorController.Delete(System.Guid)">
+            <summary>
+            Deletar colaborador
+            </summary>
+            <param name="IdColaborador">Id do colaborador a ser deletado</param>
+        </member>
+        <member name="M:estagio_brg.Controllers.HabilidadeController.Get">
+            <summary>
+            Retornar lista de habilidades
+            </summary>
+        </member>
+        <member name="M:estagio_brg.Controllers.HabilidadeController.Get(System.Guid)">
+            <summary>
+            Retornar habilidade filtrada
+            </summary>
+            <param name="guid">Id da habilidade</param>
+        </member>
+        <member name="M:estagio_brg.Controllers.HabilidadeController.Create(estagio_brg.Entities.Models.Habilidade)">
+             <summary>
+             Adicionar habilidade
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST api/Habilidade/Create
+                 {
+                    "Tipo": "Soft Skill",
+                    "Nome": "Etica",
+                 }
+            
+             </remarks>
+             <param name="entity">Objeto habilidade</param>
+        </member>
+        <member name="M:estagio_brg.Controllers.HabilidadeController.Update(estagio_brg.Entities.Models.Habilidade)">
+             <summary>
+             Atualizar habilidade
+             </summary>
+              <remarks>
+             Sample request:
+            
+                 POST api/Habilidade/Update/1
+                 {
+                    "Tipo": "Hard Skill",
+                    "Departamento": "Graduação",
+                     }
+                 }
+            
+             </remarks>
+             <param name="entity">Objeto habilidade contendo as mudanças</param>
+        </member>
+        <member name="M:estagio_brg.Controllers.HabilidadeController.Delete(System.Guid)">
+            <summary>
+            Deletar habilidade
+            </summary>
+            <param name="IdHabilidade">Id da habilidade a ser deletado</param>
+        </member>
+        <member name="M:estagio_brg.Controllers.TrilhaController.Get">
+            <summary>
+            Retornar lista de trilhas
+            </summary>
+        </member>
+        <member name="M:estagio_brg.Controllers.TrilhaController.Get(System.Guid)">
+            <summary>
+            Retornar trilha filtrada
+            </summary>
+            <param name="guid">Id da trilha</param>
+        </member>
+        <member name="M:estagio_brg.Controllers.TrilhaController.Create(estagio_brg.Entities.Models.Trilha)">
+             <summary>
+             Adicionar trilha
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST api/Trilha/Create
+                   {
+                    "Prazo": "25/05/2020",
+                    "ColaboradorIdColaborar": {
+                         "IdColaborador": 1
+                         }
+                    "HabilidadeIdHabilidade": {
+                    "IdHabilidade": 1
+                    }
+                 }
+            
+             </remarks>
+             <param name="trilha">Objeto trilha</param>
+        </member>
+        <member name="M:estagio_brg.Controllers.TrilhaController.Update(estagio_brg.Entities.Models.Trilha)">
+             <summary>
+             Atualizar trilha
+             </summary>
+              <remarks>
+             Sample request:
+            
+                 POST api/Trilha/Update/1
+                 {
+                    "Prazo": "25/08/2020",
+                    "ColaboradorIdColaborar": {
+                         "IdColaborador": 1
+                         }
+                         "HabilidadeIdHabilidade": {
+                         "IdHabilidade": 1
+                         }
+                 }
+            
+             </remarks>
+             <param name="entity">Objeto trilha contendo as mudanças</param>
+        </member>
+        <member name="M:estagio_brg.Controllers.TrilhaController.Delete(System.Guid)">
+            <summary>
+            Deletar trilha
+            </summary>
+            <param name="IdTrilha">Objeto do entity a ser deletado</param>
+        </member>
+        <member name="M:estagio_brg.Controllers.UserApiController.Authenticate(estagio_brg.Entities.Models.UserApi)">
+             <summary>
+             Logar na API
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST api/ApiUser/Login/
+                 {
+                    "Username": "estagioBrg",
+                    "Password": "processoSeletivo",
+                     }
+                 }
+            
+             </remarks>
+        </member>
+    </members>
+</doc>
