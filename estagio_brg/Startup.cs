@@ -145,8 +145,8 @@ namespace estagio_brg
             // Ativando middlewares para uso do Swagger
             MiddlewaresSwagger(app);
 
-
-
+            // Criando migration na Database
+            UpdateDatabase(app);
         }
 
         private static void MiddlewaresSwagger(IApplicationBuilder app)
@@ -157,6 +157,19 @@ namespace estagio_brg
                 c.SwaggerEndpoint("/swagger/v1/swagger.json",
                     "Estagio BRG Educacional");
             });
+        }
+
+        private static void UpdateDatabase(IApplicationBuilder app)
+        {
+            using (var serviceScope = app.ApplicationServices
+                .GetRequiredService<IServiceScopeFactory>()
+                .CreateScope())
+            {
+                using (var context = serviceScope.ServiceProvider.GetService<RepositoryContext>())
+                {
+                    context.Database.Migrate();
+                }
+            }
         }
     }
 }
