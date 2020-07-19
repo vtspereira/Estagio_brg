@@ -1,11 +1,23 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace estagio_brg.Entities.Models
 {
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum Tipo
+    {
+        [EnumMember(Value = "HardSkill")]
+        HardSkill,
+        [EnumMember(Value = "SoftSkill")]
+        SoftSkill
+    }
+
     public class Habilidade
     {
         [Key]
@@ -16,8 +28,7 @@ namespace estagio_brg.Entities.Models
         [StringLength(50, ErrorMessage = "Nome não pode ser maior do que 50 caracteres!")]
         public string Nome { get; set; }
 
-        [Required(ErrorMessage = "Tipo é obrigatório")]
-        [StringLength(50, ErrorMessage = "Tipo não pode ser maior do que 50 caracteres!")]
-        public string Tipo { get; set; }
+        [ValidEnumValue]
+        public Tipo Tipo { get; set; }
     }
 }

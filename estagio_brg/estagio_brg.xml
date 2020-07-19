@@ -77,7 +77,7 @@
             
                  POST api/Habilidade/Create
                  {
-                    "Tipo": "Soft Skill",
+                    "Tipo": 2,
                     "Nome": "Etica",
                  }
             

@@ -10,8 +10,8 @@ using estagio_brg.Entities;
 namespace estagio_brg.Entities.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20200718232527_GenerateDatabase")]
-    partial class GenerateDatabase
+    [Migration("20200719210855_DatabaseCreate")]
+    partial class DatabaseCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -48,9 +48,7 @@ namespace estagio_brg.Entities.Migrations
                         .IsRequired()
                         .HasMaxLength(50);
 
-                    b.Property<string>("Tipo")
-                        .IsRequired()
-                        .HasMaxLength(50);
+                    b.Property<int>("Tipo");
 
                     b.HasKey("IdHabilidade");
 
@@ -80,12 +78,12 @@ namespace estagio_brg.Entities.Migrations
             modelBuilder.Entity("estagio_brg.Entities.Models.Trilha", b =>
                 {
                     b.HasOne("estagio_brg.Entities.Models.Colaborador", "Colaborador")
-                        .WithMany("Trilhas")
+                        .WithMany()
                         .HasForeignKey("IdColaborador")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("estagio_brg.Entities.Models.Habilidade", "Habilidade")
-                        .WithMany("Trilhas")
+                        .WithMany()
                         .HasForeignKey("Idhabilidade")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

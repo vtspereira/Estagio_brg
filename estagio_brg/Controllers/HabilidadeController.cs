@@ -3,6 +3,7 @@ using estagio_brg.Entities.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace estagio_brg.Controllers
@@ -53,19 +54,24 @@ namespace estagio_brg.Controllers
         ///
         ///     POST api/Habilidade/Create
         ///     {
-        ///        "Tipo": "Soft Skill",
+        ///        "Tipo": 2,
         ///        "Nome": "Etica",
         ///     }
         ///
         /// </remarks>
         /// <param name="entity">Objeto habilidade</param>
         [HttpPost("[action]")]
-        public IActionResult Create([FromBody]Habilidade entity)
+        public IActionResult Create([FromBody] Habilidade entity)
         {
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             _repoWrapper.Habilidade.Create(entity);
             _repoWrapper.Save();
 
             return Ok("Criado com sucesso");
+
         }
 
         /// <summary>
@@ -89,6 +95,11 @@ namespace estagio_brg.Controllers
             var habilidade = _repoWrapper.Habilidade.FindById(s => s.IdHabilidade == entity.IdHabilidade);
             if (habilidade is null)
                 return NotFound();
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
             _repoWrapper.Habilidade.Update(entity);
             _repoWrapper.Save();

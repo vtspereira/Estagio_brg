@@ -46,9 +46,7 @@ namespace estagio_brg.Entities.Migrations
                         .IsRequired()
                         .HasMaxLength(50);
 
-                    b.Property<string>("Tipo")
-                        .IsRequired()
-                        .HasMaxLength(50);
+                    b.Property<int>("Tipo");
 
                     b.HasKey("IdHabilidade");
 
@@ -78,12 +76,12 @@ namespace estagio_brg.Entities.Migrations
             modelBuilder.Entity("estagio_brg.Entities.Models.Trilha", b =>
                 {
                     b.HasOne("estagio_brg.Entities.Models.Colaborador", "Colaborador")
-                        .WithMany("Trilhas")
+                        .WithMany()
                         .HasForeignKey("IdColaborador")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("estagio_brg.Entities.Models.Habilidade", "Habilidade")
-                        .WithMany("Trilhas")
+                        .WithMany()
                         .HasForeignKey("Idhabilidade")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

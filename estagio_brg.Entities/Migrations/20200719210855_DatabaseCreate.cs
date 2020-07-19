@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace estagio_brg.Entities.Migrations
 {
-    public partial class GenerateDatabase : Migration
+    public partial class DatabaseCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -26,7 +26,7 @@ namespace estagio_brg.Entities.Migrations
                 {
                     IdHabilidade = table.Column<Guid>(nullable: false),
                     Nome = table.Column<string>(maxLength: 50, nullable: false),
-                    Tipo = table.Column<string>(maxLength: 50, nullable: false)
+                    Tipo = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
