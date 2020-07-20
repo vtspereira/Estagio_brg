@@ -44,9 +44,16 @@ This project was developed with the following technologies:
 - [Enum][Enum]
 - [CodeFirst][CodeFirst]
 - [OAuth2][OAuth2]
-
+- [Entity Framework Core][EF]
+- [.Net Core][c#]
+- [PostgresSQL][Npgsql]
 ## :information_source: How To Use
 
+Editar arquivos appsettings.json
+
+"ConnectionStrings": {
+    "Estagio-brg": "server=localhost; user ID=(username);password=(senha);database=Estagio-brg"
+  },
 
 [![Watch the video](http://i3.ytimg.com/vi/snAs_YySBrY/hqdefault.jpg)](https://www.youtube.com/watch?v=snAs_YySBrY)
 
@@ -63,3 +70,6 @@ Made with ♥ by Vitor Soares :wave: [Get in touch!](https://www.linkedin.com/in
 [Enum]:https://docs.microsoft.com/pt-br/dotnet/api/system.enum?view=netcore-3.1
 [CodeFirst]: https://www.entityframeworktutorial.net/code-first/what-is-code-first.aspx#:~:text=Code%2DFirst%20is%20mainly%20useful,which%20match%20your%20database%20design
 [OAuth2]: https://oauth.net/2/jwt/
+[EF]: https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx
+[c#]: https://docs.microsoft.com/en-us/dotnet/core/
+[Npgsql]:http://www.npgsql.org/efcore/index.html
