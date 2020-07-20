@@ -45,7 +45,7 @@ This project was developed with the following technologies:
 - [CodeFirst][CodeFirst]
 - [OAuth2][OAuth2]
 
-## :how-to-use: How To Use
+## :information_source: How To Use
 
 
 
