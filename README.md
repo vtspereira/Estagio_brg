@@ -27,7 +27,7 @@
   <a href="#-nlw">Estagio BRG Educacional</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-information_source-How To Use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#how-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
 
@@ -45,7 +45,7 @@ This project was developed with the following technologies:
 - [CodeFirst][CodeFirst]
 - [OAuth2][OAuth2]
 
-## :information_source: How To Use
+## :how-to-use: How To Use
 
 
 
