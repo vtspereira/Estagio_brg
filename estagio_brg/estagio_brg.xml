@@ -77,7 +77,7 @@
             
                  POST api/Habilidade/Create
                  {
-                    "Tipo": 2,
+                    "Tipo": "SoftSkill",
                     "Nome": "Etica",
                  }
             
@@ -93,8 +93,8 @@
             
                  POST api/Habilidade/Update/1
                  {
-                    "Tipo": "Hard Skill",
-                    "Departamento": "Graduação",
+                    "Tipo": "SoftSkill",
+                    "Nome": "Paciencia",
                      }
                  }
             

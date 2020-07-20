@@ -54,7 +54,7 @@ namespace estagio_brg.Controllers
         ///
         ///     POST api/Habilidade/Create
         ///     {
-        ///        "Tipo": 2,
+        ///        "Tipo": "SoftSkill",
         ///        "Nome": "Etica",
         ///     }
         ///
@@ -82,8 +82,8 @@ namespace estagio_brg.Controllers
         ///
         ///     POST api/Habilidade/Update/1
         ///     {
-        ///        "Tipo": "Hard Skill",
-        ///        "Departamento": "Graduação",
+        ///        "Tipo": "SoftSkill",
+        ///        "Nome": "Paciencia",
         ///         }
         ///     }
         ///
