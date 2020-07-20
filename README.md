@@ -48,7 +48,7 @@ This project was developed with the following technologies:
 ## :information_source: How To Use
 
 
-
+[![Watch the video](http://i3.ytimg.com/vi/snAs_YySBrY/hqdefault.jpg)](https://www.youtube.com/watch?v=snAs_YySBrY)
 
 ## :memo: License
 
