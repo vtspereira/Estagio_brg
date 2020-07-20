@@ -27,15 +27,11 @@
   <a href="#-nlw">Estagio BRG Educacional</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-information_source">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-information_source-How To Use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
 
 ## :information_source: What's Estagio BRG Educacional?
-
-<strong>BRG Educacional</strong> internship is a selection process led by the company [BRG Educacional](https://brgeducacional.com.br/).
-
-## 💻 Project
 
 The selection process is about a project developed an API (Swagger) in C #.
 
